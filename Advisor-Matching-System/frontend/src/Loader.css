@@ -1,0 +1,51 @@
+.loader-container {
+  position: fixed; /* Position it over everything else */
+  top: 0; /* Start from the top of the viewport */
+  left: 0; /* Start from the left of the viewport */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-color: #e77817; /* Your desired background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+  
+  .progress-bar {
+    width: 70%;
+    max-width: 400px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(17, 30, 78);
+    position: relative;
+    overflow: hidden; /* Ensures the inner bar stays within the border */
+  }
+
+  .loading-message {
+    color: #06224e; /* Dark blue color for the text */
+    margin-top: 20px; /* Space above the message */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    text-align: center;
+  }
+  
+  .progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #22c8f2; /* Modern blue color */
+    animation: loading 2s ease-in-out infinite;
+  }
+  
+  @keyframes loading {
+    0% { left: -50%; }
+    50% { left: 0%; }
+    100% { left: 100%; }
+  }
+  
