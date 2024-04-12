@@ -1,0 +1,58 @@
+/* General Styles */
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Modern and readable font */
+  background-color: #ea6e16; /* Bright blue background for the whole app */
+  color: #ffffff; /* White text color */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-header {
+  width: 90%;
+  max-width: 800px;
+  background-color: #ff9933; /* Vibrant orange background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #ffffff; /* White color for the heading */
+  margin-bottom: 40px;
+}
+
+/* Input Container Styles */
+.input-container {
+  width: 100%;
+  margin-bottom: 20px;
+  height: calc(50vh - 60px); /* Half of the remaining viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff; /* White color for labels */
+}
+
+/* Textarea Styles */
+.text-input {
+  flex-grow: 1; /* Expand to fill available space */
+  padding: 10px;
+  border: none; /* No border for a cleaner look */
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff; /* White background for contrast */
+  resize: none; /* Disable resizing */
+}
+
+::placeholder {
+  color: #7f8c8d;
+}

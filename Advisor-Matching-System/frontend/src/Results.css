@@ -1,0 +1,101 @@
+.results-container {
+  text-align: center;
+  padding: 20px;
+  color: rgb(246, 106, 19);
+}
+
+.results-container h1 {
+  color: rgb(13, 14, 111); /* Change the text color to orange */
+  font-size: 30px; /* Increase the font size; adjust as needed */
+  margin-bottom: 30px;
+}
+
+.form-image {
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  width: 10%; /* Ensures the image is responsive */
+  height: 20%; /* Maintains the aspect ratio */
+  border-radius: 10px;
+}
+
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Added spacing between cards */
+}
+
+.prof-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  /* Width of the card */
+  height: 300px;
+  /* Height of the card - making it square */
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  /* Flex display to center content */
+  align-items: center;
+  /* Align items vertically */
+  justify-content: center;
+  /* Align items horizontally */
+}
+
+.professor-image {
+  width: 80%; /* Makes the image fill the card width */
+  height: 70%; /* Maintains the aspect ratio of the image */
+  border-radius: 5px; /* Optional: Adds rounded corners to the image */
+  margin-bottom: 10px; /* Space between the image and the professor's name */
+}
+
+.prof-link {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Ensures text color is not changed by the link */
+  display: block; /* Makes the entire area of the link clickable */
+}
+
+
+.prof-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: #e0f7fa;
+  /* Light bluish background on hover */
+  border: 3px solid rgb(8, 5, 100);
+  /* Thicker highlighted border */
+  outline: none;
+  box-shadow: 0 0 10px lightcoral;
+  /* Shadow for the border */
+}
+
+
+
+.prof-card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(13, 14, 111);
+  text-align: center;
+}
+
+.more-info-btn {
+  padding: 10px 20px;
+  margin-top: 20px; /* Space above the button */
+  background-color: #0d0d58;
+  color: rgb(246, 246, 249);
+  border: 0.5px solid rgb(8, 5, 100);
+  border-radius: 6px;
+  border-color: #150852;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.more-info-btn:hover {
+  background-color: #2980b9; /* Slightly darker shade on hover */
+}
